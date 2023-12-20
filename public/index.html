@@ -1,0 +1,51 @@
+<!-- version: 12/18 3:58 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lyrics Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    
+</head>
+
+<body>
+    
+        <!-- Navigation Bar -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <span id="typed"></span>
+
+        <form id="lyricsForm">
+            <input type="text" id="song" placeholder="Song Title" required>
+            <button type="submit" class="button-85">Get Lyrics</button>
+        </form>
+
+        <label for="languageSelect">Choose a language:</label>
+        <select id="languageSelect"></select>
+        <br>
+        <h2 id="songInfo">Song: </h2>
+
+        <div id="lyricsDisplay">
+            <div id="originalSection">
+                <h2>Original Lyrics</h2>
+                <div id="originalLyrics"></div>
+            </div>
+            <div id="translatedSection">
+                <h2>Translated Lyrics</h2>
+                <div id="translatedLyrics"></div>
+            </div>
+        </div>
+
+        <span id="history"></span>
+
+    
+</body>
+
+</html>
